@@ -1,0 +1,17 @@
+
+SIZNGA KELGAN NAVBATLAR 
+
+{% for i in navbatlar %}
+
+{% if i.korxona_nomi == user.username %}
+<br>
+{{ i.korxona_nomi }} <br>
+{{ i.soha }} <br>
+{{ i.time }} <br>
+{{ i.sana }} <br>
+{{ i.meet_turi }} <br>
+{{ i.phone_number }}
+
+{% endif %}
+
+{% endfor %}

@@ -1,0 +1,86 @@
+{% load widget_tweaks %}  
+
+{% block content %}
+
+
+{% comment %} {% if post_all_infos.rasm %}
+<img src="{% url 'post_all_infos.rasm.url' %}" style="width:79px !important">
+
+{% endif %} {% endcomment %}
+Rasm : <img src="{{ post_all_infos.rasm.url }}" style="width:79px !important">
+<br>
+<br>
+
+Muolija narxi :  {{ post_all_infos.narx }} {{ post_all_infos.pul_turi }} <br>
+soha :        {{ post_all_infos.soha }} <br>
+Malumotlar :        {{ post_all_infos.qushimcha_malumot }} <br>
+Profile nomi :        {{ post_all_infos.user }} <br>
+
+<br>
+
+
+<br>
+<br>
+
+
+{% for i in foydalanuvchi_data %}
+
+
+
+
+
+
+{% if post_all_infos.user_idsi == i.user.id %}
+
+
+
+
+{% if i.image %}
+Korxona surati : <img src="{{ i.image.url}}" style="width:34px">
+{% endif %} <br> 
+
+
+
+Shifoxona Manzili : {{ i.location }} <br>
+
+Ish vaqti : {{ i.ish_vaqti }} <br>
+Shifoxona haqida : {{ i.korxona_haqida }} <br>
+Shifoxona Tel. raqami : {{ i.phone }} <br>
+
+{% endif %}
+{% endfor %}
+
+
+_________________________________________________________________________________ <br> 
+Joy band etasizmi ?  Pastdagi bulimni to'ldiring    <br>
+________________________________________________    <br>
+<br>
+
+<br>
+<br>
+
+
+
+
+<form method='POST' >
+    
+{% csrf_token %}
+   korxona nomi: {% render_field forms.korxona_nomi name='korxona_nomi' %} <br>
+   soha : {% render_field forms.soha name='soha' %} <br>
+   Vaqt : {% render_field forms.time type='time' name='time' %} <br>
+   Sana : {% render_field forms.sana type="date" value="2000-00-00" min="2022-00-00" name='date' %} <br>
+   Qanday shaklda : {% render_field forms.meet_turi name='meet_turi' %} <br>
+   Telfon : {% render_field forms.phone_number type='number' name='phone_number' %} <br>
+
+
+
+    <input type='submit'>
+
+</form>
+
+
+
+
+{% endblock %}
+
+

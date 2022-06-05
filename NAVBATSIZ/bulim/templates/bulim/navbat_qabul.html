@@ -1,0 +1,23 @@
+<b> Hello navbatga yozildingiz </b> 
+____________________________________________________________   <br>
+
+Shifoxona : <b> {{ nomi }}</b> <br>
+Qaysi bo'lim : <b> {{ soha }} </b>  <br>
+Ko'rik vaqti va sanasi : {{ sana }} | <b> {{ vaqt }} </b> <br>
+Qay shaklda : <b> {{ meet_turi }} </b> <br>
+Telfon raqamingiz : {{ phone }}  <br>
+
+____________________________________________________________   <br>
+
+<div class='navbat'>
+{% for i in form %}
+
+{{ i }} <br>
+
+
+
+{% endfor %}
+
+</div>
+
+

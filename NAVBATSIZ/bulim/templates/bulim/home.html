@@ -1,0 +1,78 @@
+{% load static %}
+{% block content %}
+
+<h1> Home </h1>
+
+<a href="{% url 'main:logout' %}"> Logout </a> 
+<br>
+<br> 
+
+
+
+{% for i in form %}
+{% if i.soha == "duxtir" %}
+{% if i.rasm %}
+<img src="{{ i.rasm.url }}" style="width:102px !important">  
+{% endif %} 
+<br> 
+{{ i.narx }} <br> 
+{{ i.pul_turi }} <br>
+<br>
+{{ i.soha }} <br>
+{{ i.qushimcha_malumot }} <br>
+Profile nomi : {{ i.user }}      <br>
+
+<br> 
+<a href="{% url 'main:view_post' pk=i.id %}"> <b> Detalniy malumot </b> </a> 
+{% endif %}
+
+{% endfor %}
+  
+<br>
+         
+<br>
+<br>
+
+<br>
+
+<br>
+<br>
+<br>    
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+{% for i in form %}
+
+
+{% if i.rasm %}
+<img src="{{ i.rasm.url }}" style='width:76px !important'> <br> 
+{% endif %} 
+
+{{ i.narx }} {{ i.pul_turi }} <br>
+
+
+<br>
+
+
+
+{{ i.soha }} <br>
+{{ i.qushimcha_malumot }} <br>
+
+<a href="{% url 'main:view_post' pk=i.id %}"> <b> Detalniy malumot </b> </a>  <br> 
+
+
+
+
+
+
+{% endfor %}
+{% endblock %}  
+
+
+
+

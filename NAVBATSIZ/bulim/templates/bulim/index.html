@@ -1,0 +1,639 @@
+
+<html class="no-js">
+{% load static %}
+
+
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Navbatsiz - projectimizga xush kelibsiz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'bulim/index/img/uz.png' %}">
+    
+        <link rel="stylesheet" href="{% static 'bulim/index/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'bulim/index/css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'bulim/index/css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'bulim/index/css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'bulim/index/css/all.min.css' %}">
+        <link rel="stylesheet" href="{% static 'bulim/index/css/slick.css' %}">
+        <link rel="stylesheet" href="{% static 'bulim/index/css/default.css' %}">
+        <link rel="stylesheet" href="{% static 'bulim/index/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'bulim/index/css/responsive.css' %}">
+    </head>
+    <body>
+
+{% block content %}
+        <header>
+            <div id="header-sticky" class="header-area header-transparrent pt-50">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="{% url 'Mainpage' %}"><img src="{% static 'bulim/index/img/logo/logo.png' %}" alt="" style="height:97px"></a>
+                            </div>
+                        </div>
+           
+                        <div class="col-xl-10 col-lg-10">
+                            <div class="header-button f-right d-none d-lg-block">
+                                <a href="{% url 'main:home' %}" class="btn btn-bg-white">Shifokorlar </a>
+                            </div>
+                            <div class="responsive"><i class="fas fa-bars"></i></div>
+                            <div class="header-menu f-right">
+                                <nav id="basic-nav">
+                                    <ul class="basic-menu">
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">Sayt haqida</a></li>
+                                        <li><a href="#features">Features</a></li>
+                                        <li><a href="#screenshot">Screenshot</a></li>
+                                       
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main>
+    
+            <section id="home" class="hero-area hero-hight hero-bg pos-rel" data-background="{% static 'bulim/index/img/hero/hero-bg-01.png' %}">
+                <div class="slider-shape s-shape-1 bounce-animate">
+                    <img src="{% static 'bulim/index/img/shape/s-shape-1.png' %}" alt="">
+                </div>
+                <div class="slider-shape s-shape-2 bounce-animate">
+                    <img src="{% static 'bulim/index/img/shape/s-shape-2.png' %}" alt="">
+                </div>
+                <div class="slider-shape s-shape-3 bounce-animate">
+                    <img src="{% static 'bulim/index/img/shape/s-shape-3.png' %}" alt="">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-9">
+                            <div class="hero-caption">
+                                <div class="hero-text">
+                                    <h1 class="wow fadeInUp" data-wow-delay="0.3s">Shifokor qidiryapsizmi ? </h1>
+                                    <p class="wow fadeInUp" data-wow-delay="0.5s">Bizning web sayt sizga bu borada yordam beradi tez va oson </p>
+                                </div>
+                                <div class="subscriber-form wow fadeInUp" data-wow-delay="0.7s">
+                                    <form action="#">
+                                        <input placeholder="Siz uchun">
+                                        <button class="btn btn-bg-salmon"> <a href="{% url 'main:register' %}">Shifokorlar uchun register</a></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 d-none d-xl-block">
+                            <div class="hero-img">
+                                <img src="{% static 'bulim/index/img/hero/phone-screen-mockup.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- hero end -->
+
+            <!-- services start -->
+            <section id="about" class="features-area pt-135 pb-110">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section-title pos-rel text-center mb-70">
+                                <h2 class="back-text">Navbatsiz</h2>
+                                <h6>Uzoq vaqt qidiryapsizmi</h6>
+                                <h1>Vaqtingizni asrab qoluvchi <br> platforma sifatida ko'ring</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-list">
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="features-wrapper text-center mb-30 wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="features-icon pos-rel">
+                                        <img src="https://img.icons8.com/ios/100/undefined/messaging-.png" alt="">
+                                    </div>
+                                    <div class="feature-inner-text">
+                                        <h4><a href="#">Oson aloqa</a></h4>
+                                        <p>Bir dona xat bilan siz shifokor yordamchisi bilan balki korxona bilan bog'lana olasiz</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="features-wrapper text-center mb-30 wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="features-icon pos-rel">
+                                        <img src="https://img.icons8.com/ios/100/undefined/choose.png"/>
+                                    </div>
+                                    <div class="feature-inner-text">
+                                        <h4><a href="#">Erkin tanlov</a></h4>
+                                        <p>Shifokorlar bulimida siz o'zingiz hohlagan hususiy yoki davlatning shifoxonalarini tanlashingiz mumkin</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="features-wrapper text-center mb-30 wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="features-icon pos-rel">
+                                        <img src="https://img.icons8.com/ios/100/undefined/queue.png"/>
+                                    </div>
+                                    <div class="feature-inner-text">
+                                        <h4><a href="#">Navbatsiz</a></h4>
+                                        <p>Oldindan buyurtma berganingiz uchun siz navbatsiz usha sanada shifokor ko'rigidan utasiz </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="features-wrapper text-center mb-30 wow fadeInUp" data-wow-delay="0.8s">
+                                    <div class="features-icon pos-rel">
+                                        <img src="https://img.icons8.com/ios/100/undefined/wallet--v1.png"/>
+                                    </div>
+                                    <div class="feature-inner-text">
+                                        <h4><a href="#">Sifatli va arzon</a></h4>
+                                        <p>Bizning xizmatlar sizning vaqtingizni va asabingizni tejash uchun sifatli va hamyonbop qilingan </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- services end -->
+
+            <!-- stock start -->
+            <section class="stock-area zircon-bg fix pos-rel">
+                <div class="stock-shape stock-shape-1 bounce-animate">
+                    <img src="{% static 'bulim/index/img/shape/stock-shape-1.png' %}" alt="">
+                </div>
+                <div class="stock-shape stock-shape-2 bounce-animate">
+                    <img src="{% static 'bulim/index/img/shape/stock-shape-2.png' %}" alt="">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="stock-wrapper pt-130" >
+                                <div class="section-title pos-rel mb-40 ">
+                                    <h2 class="back-text grey-text">Navbatsiz</h2>
+                                    <h6>Nima uchun bu loyihadan</h6>
+                                    <h1>Foydalanishingiz kerak </h1>
+                                </div>
+                                <div class="stock-text">
+                                    <p>Sababi shuki hozirgi kunda ko'pchilik betartib navbatlarning vujudga kelganidan aziyat chekadi va kutadi . Shu muomolarni  
+                                    yechish uchun azgina bulsada o'z hissamizni qushmoqchimiz Navbatsiz loyihamiz bilan . Navbatlarni bartaraf etish sizga ko'p
+                                    vaqt tejab qoladi siz uchun va albatta Shifokorlarimiz uchun ham foydaga xizmat qiladi 
+                                    sizning sog'ligingiz biz uchun muhim  </p>
+                                    <a href="#" class="btn btn-bg-salmon">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-5 ">
+                            <div class="stock-right-img wow fadeInRight" data-wow-delay="0.5s">
+                                <img src="{% static 'bulim/index/img/stock/stock-right-img.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- stock end -->
+
+            <!-- how-it-works start -->
+            <section id="work" class="how-it-works pt-135 pb-110">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section-title pos-rel text-center mb-70">
+                                <h2 class="back-text">define</h2>
+                                <h6>Qanday Foydalanamiz </h6>
+                                <h1>Shifokorlar uchun : </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="define-wrapper text-center pos-rel mb-30 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="define-icon">
+
+                                    <img src="https://img.icons8.com/small/64/undefined/create-new.png"/>
+                                </div>
+                                <div class="define-inner-text">
+                                    <h5><a href="{% url 'main:register' %}">Account oching : Register </a></h5>
+                                    <p>Account ochish juda oson sizdan faqt korxona nomi (username) emailingiz va parollingiz suraladi </p>
+                                    <a href="{% url 'main:register' %}"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="define-wrapper text-center pos-rel mb-30 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="define-icon">
+                                    <img src="https://img.icons8.com/pastel-glyph/64/undefined/ingredients-list--v1.png"/>
+                                </div>
+                                <div class="define-inner-text">
+                                    <h5><a href="{% url 'main:login' %}">Profileni to'diring</a></h5>
+                                    <p>Sizning korxonangiz haqida va ayrim muhim malumotlarni kiritishingiz talab etiladi bu bulimda</p>
+                                    <a href="{% url 'main:login' %}"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="define-wrapper text-center pos-rel mb-30 wow fadeInUp" data-wow-delay="0.7s">
+                                <div class="define-icon">
+                                    <img src="https://img.icons8.com/external-line-lima-studio/64/undefined/external-post-social-media-line-lima-studio-2.png"/>
+                                </div>
+                                <div class="define-inner-text">
+                                    <h5><a href="{% url 'main:register' %}">Post joylang</a></h5>
+                                    <p>Post joylash eng oson qismlaridan biridir negaki siz bemalol postni hech qanday ortiqcha malumotlarsiz joylay olasiz</p>
+                                    <a href="{% url 'main:register' %}"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- how-it-works end -->
+
+      
+            <!-- manual area start -->
+            <section id="features" class="manual-area zircon-bg pt-135 pb-95 fix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section-title pos-rel text-center mb-60">
+                                <h2 class="back-text grey-text">Navbatsiz</h2>
+                                <h6>Shifokor va bemor</h6>
+                                <h1>Ikkala taraf uchun <br> ham qulay Interface</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manual-list-area">
+                        <div class="row no-gutters">
+                            <div class="col-xl-6 col-lg-7 ">
+                                <div class="manual-left pt-65">
+                                    <div class="single-manual-list wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="manual-wrapper d-flex">
+                                            <div class="manual-icon">
+                                                <img src="{% static 'bulim/index/img/icon/manual-icon-1.png' %}" alt="">
+                                            </div>
+                                            <div class="manual-text">
+                                                <h4>User Interface</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                    ut labore et dolore.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-manual-list wow fadeInUp" data-wow-delay="0.5s">
+                                        <div class="manual-wrapper d-flex">
+                                            <div class="manual-icon">
+                                                <img src="{% static 'bulim/index/img/icon/manual-icon-2.png' %}" alt="">
+                                            </div>
+                                            <div class="manual-text">
+                                                <h4>Manualy Using Process</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                    ut labore et dolore.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-manual-list wow fadeInUp" data-wow-delay="0.7s">
+                                        <div class="manual-wrapper d-flex">
+                                            <div class="manual-icon">
+                                                <img src="{% static 'bulim/index/img/icon/manual-icon-3.png' %}" alt="">
+                                            </div>
+                                            <div class="manual-text">
+                                                <h4>Get/Give Payment</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                    ut labore et dolore.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-manual-list wow fadeInUp" data-wow-delay="0.9s">
+                                        <div class="manual-wrapper d-flex">
+                                            <div class="manual-icon">
+                                                <img src="{% static 'bulim/index/img/icon/manual-icon-4.png' %}" alt="">
+                                            </div>
+                                            <div class="manual-text">
+                                                <h4>Full Settings</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                    ut labore et dolore.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-5">
+                                <div class="manual-right bounce-animate">
+                                    <img src="{% static 'bulim/index/img/mockup/phone-mockup-3.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- manual area end -->
+
+            <!-- skills-area start -->
+            <section class="skills-area pb-100 pt-95" data-background="{% static 'bulim/index/img/skills/skill-bg.png' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section-title section-title-white section-title-blue pos-rel text-center mb-70">
+                                <h2 class="back-text">facts</h2>
+                                <h6>fun facts</h6>
+                                <h1>Learn More About <br> Some Fun Facts</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <div class="skill-wrapper text-center mb-40 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="skill-circle">
+                                        <div class="progress-circular">
+                                            <input type="text" class="knob" value="0" data-rel="65" data-linecap="round" data-width="190" data-bgcolor="#1e2256"
+                                                data-fgcolor="#7e7aff" data-thickness=".06" data-readonly="true" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="skill-circle-text">
+                                        <h3>Relative Idea</h3>
+                                        <p>Lorem ipsum dolor sit amet, con- sectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <div class="skill-wrapper text-center mb-40 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="skill-circle">
+                                        <div class="progress-circular">
+                                            <input type="text" class="knob" value="0" data-rel="53" data-linecap="round" data-width="190" data-bgcolor="#1e2256"
+                                                data-fgcolor="#24e271" data-thickness=".06" data-readonly="true" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="skill-circle-text">
+                                        <h3>Client Project</h3>
+                                        <p>Lorem ipsum dolor sit amet, con- sectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <div class="skill-wrapper text-center mb-40 wow fadeInUp" data-wow-delay="0.7s">
+                                    <div class="skill-circle">
+                                        <div class="progress-circular">
+                                            <input type="text" class="knob" value="0" data-rel="35" data-linecap="round" data-width="190" data-bgcolor="#1e2256"
+                                                data-fgcolor="#d56dfc" data-thickness=".06" data-readonly="true" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="skill-circle-text">
+                                        <h3>Cup Of Coffee</h3>
+                                        <p>Lorem ipsum dolor sit amet, con- sectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <div class="skill-wrapper text-center mb-40 wow fadeInUp" data-wow-delay="0.9s">
+                                    <div class="skill-circle">
+                                        <div class="progress-circular">
+                                            <input type="text" class="knob" value="0" data-rel="42" data-linecap="round" data-width="190" data-bgcolor="#1e2256"
+                                                data-fgcolor="#fe8264" data-thickness=".06" data-readonly="true" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="skill-circle-text">
+                                        <h3>Great Taste</h3>
+                                        <p>Lorem ipsum dolor sit amet, con- sectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- skills-area end -->
+
+            <!-- screenshot-area start -->
+            <section id="screenshot" class="screenshot-area zircon-bg pt-115 pb-120">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section-title pos-rel text-center mb-60">
+                                <h2 class="back-text grey-text">shot</h2>
+                                <h6>Screen</h6>
+                                <h1>App Screenshot</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-active owl-carousel">
+                        <div class="single-screenshot">
+                            <a class="popup-image" href="{% static 'bulim/index/img/screenshot/show-1.jpg' %}"><img src="{% static 'bulim/index/img/screenshot/show-1.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="single-screenshot">
+                            <a class="popup-image" href="{% static 'bulim/index/img/screenshot/show-2.jpg' %}"><img src="{% static 'bulim/index/img/screenshot/show-2.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="single-screenshot">
+                            <a class="popup-image" href="{% static 'bulim/index/img/screenshot/show-3.jpg' %}"><img src="{% static 'bulim/index/img/screenshot/show-3.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="single-screenshot">
+                            <a class="popup-image" href="{% static 'bulim/index/img/screenshot/show-4.jpg' %}"><img src="{% static 'bulim/index/img/screenshot/show-4.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="single-screenshot">
+                            <a class="popup-image" href="{% static 'bulim/index/img/screenshot/show-5.jpg' %}"><img src="{% static 'bulim/index/img/screenshot/show-5.jpg' %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- screenshot-area end -->
+
+            <!-- testimonials-area start -->
+            <section class="testimonials-area pt-135 pb-135">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section-title section-title-white pos-rel text-center mb-50">
+                                <h2 class="back-text">review</h2>
+                                <h6>Testimonials</h6>
+                                <h1>Our Happy Clients Says <br> About Us</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-10 offset-lg-1 offset-xl-2">
+                            <div class="testimonials-item-active">
+                                <div class="testimonial-item text-center">
+                                    <div class="testi-icon text-center">
+                                        <img src="{% static 'bulim/index/img/testimonials/quato.png' %}" alt="">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla..</p>
+                                    <div class="designation">
+                                        <h3>MD Salim Rana</h3>
+                                        <span>Founder of uithemes</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item text-center">
+                                    <div class="testi-icon text-center">
+                                        <img src="{% static 'bulim/index/img/testimonials/quato.png' %}" alt="">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla..</p>
+                                    <div class="designation">
+                                        <h3>Rosalina D. Alian</h3>
+                                        <span>Founder of uithemes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- testimonials-area end -->
+
+    
+        
+            <section class="brand-area pb-120">
+                <div class="container">
+                    <div class="brand-active owl-carousel">
+                        <div class="single-brand">
+                            <img src="{% static 'bulim/index/img/brand/brand1.png' %}" alt="">
+                        </div>
+                        <div class="single-brand">
+                            <img src="{% static 'bulim/index/img/brand/brand2.png' %}" alt="">
+                        </div>
+                        <div class="single-brand">
+                            <img src="{% static 'bulim/index/img/brand/brand3.png' %}" alt="">
+                        </div>
+                        <div class="single-brand">
+                            <img src="{% static 'bulim/index/img/brand/brand4.png' %}" alt="">
+                        </div>
+                        <div class="single-brand">
+                            <img src="{% static 'bulim/index/img/brand/brand5.png' %}" alt="">
+                        </div>
+                        <div class="single-brand">
+                            <img src="{% static 'bulim/index/img/brand/brand6.png' %}" alt="">
+                        </div>
+                        <div class="single-brand">
+                            <img src="{% static 'bulim/index/img/brand/brand2.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+            <!-- footer start -->
+            <footer>
+                <div class="footer-area zircon-bg pt-100">
+                    <div class="container">
+                        <div class="footer-top pb-70">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-8">
+                                    <div class="footer-widget mb-30">
+                                        <div class="footer-logo">
+                                            <img src="{% static 'bulim/index/img/logo/footer-logo.png' %}" alt="" style="height:76px">
+                                        </div>
+                                        <div class="footer-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor
+                                                incididunt ut labore et dolore magna
+                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <div class="footer-btn get-app">
+                                            <a class="app-border-btn" href="#"><i class="fab fa-android"></i>
+                                                <p>Get It On <br> <b>Google Play</b></p>
+                                            </a>
+                                            <a class="app-bg-btn" href="#"><i class="fab fa-android"></i>
+                                                <p>Get It On <br> <b>Google Play</b></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-4">
+                                    <div class="footer-widget mb-30">
+                                        <div class="footer-title">
+                                            <h5>Company</h5>
+                                        </div>
+                                        <div class="footer-menu">
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Our Team</a></li>
+                                                <li><a href="#">Portfolio</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Blog</a></li>
+                                                <li><a href="#">Career</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="footer-widget mb-30">
+                                        <div class="footer-title">
+                                            <h5>Address</h5>
+                                        </div>
+                                        <div class="footer-address">
+                                            <address>
+                                                level 1 420 spencer street,
+                                                Malbourne VIC 3000,
+                                                Australia
+                                            </address>
+                                        </div>
+                                        <div class="footer-contact">
+                                            <ul>
+                                                <li><span class="contact-title">Call us:</span>04-8758-9876</li>
+                                                <li><span class="contact-title">Mail at:</span><a href="https://themepure.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7910171f16390a180a0a1d1c1c1f571a1614">[email&#160;protected]</a></li>
+                                                <li><span class="contact-title">Get in:</span>www.sassdeef.com</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom pt-30 pb-30">
+                            <div class="container-fulid">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="footer-copyright text-center text-md-left">
+                                            <p class="white-color">Copyright By <span>BasicTheme</span> 2019</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="footer-social-icons text-center text-md-right">
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer end -->
+
+
+		<!-- JS here -->
+        <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'bulim/index/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/popper.min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/one-page-nav-min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/slick.min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/ajax-form.js' %}"></script>
+        <script src="{% static 'bulim/index/js/wow.min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/jquery.scrollUp.min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/js_jquery.knob.js' %}"></script>
+        <script src="{% static 'bulim/index/js/js_jquery.appear.js' %}"></script>
+        <script src="{% static 'bulim/index/js/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static 'bulim/index/js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevTAR-V2fDy9gQsQn1xNHBPH2D36kck0"></script>
+        <script src="{% static 'bulim/index/js/plugins.js' %}"></script>
+        <script src="{% static 'bulim/index/js/main.js' %}"></script>
+
+        {% endblock %}
+
+    </body>
+
+</html>

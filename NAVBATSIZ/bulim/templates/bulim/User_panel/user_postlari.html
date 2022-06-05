@@ -1,0 +1,30 @@
+{% for i in post %}
+{% if i.user == user.username %}
+
+{% if i.rasm %}
+<img src="{{ i.rasm.url }}" style="width:106px !important">
+
+{% endif %}
+<br>
+<br>
+<br>
+SOHA : {{ i.soha }} <br>
+
+NARXI : {{ i.narx }} {{ i.pul_turi }} <br>
+QUSHIMCHA MALUMOT : {{ i.qushimcha_malumot }} 
+<a href="{% url 'main:update' pk=i.id %}"> <b> Update </b> </a> 
+<a href="{% url 'main:delet' pk=i.id %}"> <b> Delet  </b> </a>
+{% comment %} <a href="{% url 'update_post' post.pk %}"> Postni o'zgartirish </a>
+<a href="{% url 'delete_post' post.pk %}"> Postni o'chirish </a> {% endcomment %}
+
+
+
+<br>
+<br> 
+
+
+{% endif %}
+{% endfor %}
+
+<br>
+<br>
